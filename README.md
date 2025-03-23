@@ -137,6 +137,7 @@ eksctl create iamserviceaccount \
 ```sh
 kubectl get ingress -n game-2048
 ```
+![image](https://github.com/user-attachments/assets/6b5c5b70-cdb0-494d-8cbd-149fd29d199b)
 
 ## Cleanup
 Refer to the cleanup steps above to remove AWS resources and avoid unnecessary costs.
