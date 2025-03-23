@@ -54,12 +54,24 @@ eksctl create fargateprofile \
     --name alb-sample-app \
     --namespace game-2048
 ```
-
+***or***
+```sh
+git clone https://github.com/chidhvilaskacham/EKS_2048_game.git
+kubectl create -f fargate_profile.yaml
+```
 ### **Deploy the 2048 Game**
 Apply the Kubernetes manifest:
 ```sh
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml
 ```
+
+***or***
+
+```sh
+git clone https://github.com/chidhvilaskacham/EKS_2048_game.git
+kubectl apply -f 2048_deployment.yaml
+```
+
 This manifest creates:
 - A **Deployment** to run the 2048 game pods.
 - A **Service** to expose the game internally.
