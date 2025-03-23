@@ -1,4 +1,4 @@
-# Amazon EKS Fargate Deployment with 2048 Game Example
+# Amazon EKS Fargate Deployment with 2048 Game
 
 This repository provides a step-by-step guide to deploy a 2048 game application on Amazon EKS using Fargate and an Application Load Balancer (ALB). It includes instructions for setting up the EKS cluster, configuring IAM roles, deploying the 2048 game, and installing the AWS Load Balancer Controller.
 
