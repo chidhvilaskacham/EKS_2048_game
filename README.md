@@ -27,6 +27,7 @@ aws configure
 ## 1. Create an EKS Cluster with Fargate
 Amazon EKS (Elastic Kubernetes Service) allows you to run Kubernetes applications on AWS without managing the underlying infrastructure. Fargate is a serverless compute engine that automatically provisions resources, eliminating the need for managing worker nodes.
 
+
 ### **Create the Cluster**
 Run the following command to create an EKS cluster using Fargate:
 ```sh
@@ -44,6 +45,8 @@ eksctl delete cluster --name demo-cluster --region us-east-1
 
 ## 2. Deploy the 2048 Game Application
 The 2048 game is deployed as a Kubernetes application. It requires a **namespace** (game-2048) and a deployment manifest that defines the necessary resources.
+
+AWS Fargate is used to run containers without managing servers or clusters of EC2 instances, allowing developers to focus on application development and deployment rather than infrastructure management. 
 
 ### **Create a Fargate Profile**
 Fargate profiles determine which Kubernetes namespaces should run on Fargate. Create a Fargate profile for the `game-2048` namespace:
