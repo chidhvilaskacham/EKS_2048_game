@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: demo-cluster
+  region: us-east-1
+
+fargateProfiles:
+  - name: game-2048-profile
+    selectors:
+      - namespace: game-2048
