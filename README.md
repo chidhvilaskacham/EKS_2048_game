@@ -133,8 +133,8 @@ Retrieve the ALB address to access the game.
 ```sh
 kubectl get ingress -n game-2048
 ```
+![image](https://github.com/user-attachments/assets/d24788d6-9997-4291-949e-efbb2abd1ec5)
 
-![2048 Game](image.png)
 
 ## 6. Cleanup
 To remove AWS resources and avoid unnecessary costs:
